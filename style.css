@@ -1,0 +1,184 @@
+/* Calendar */
+#calendar {
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* FullCalendar Event */
+.fc-event {
+  border-radius: 6px;
+  font-size: 0.85rem;
+  padding: 4px;
+  color: #fff !important;
+  border: none !important;
+}
+
+/* Modal */
+.modal-content {
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* Forms */
+input[type="text"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="password"],
+select {
+  border-radius: 6px;
+  border: 1px solid #ced4da;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+}
+
+/* Buttons */
+.btn-success,
+.btn-primary {
+  border-radius: 6px;
+  font-weight: 500;
+  padding: 0.5rem 1.2rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-success:hover,
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Cards */
+.card {
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+/* Admin Dashboard Stats */
+.dashboard-stat {
+  border-radius: 12px;
+  padding: 20px;
+  background: #fff;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease-in-out;
+}
+
+.dashboard-stat:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Tables */
+table {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+table th {
+  background-color: #343a40;
+  color: #fff;
+}
+
+table td {
+  vertical-align: middle;
+}
+
+/* Profile Card */
+.profile-card {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.profile-card h3 {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.profile-card p {
+  font-size: 0.95rem;
+  color: #495057;
+}
+
+/* Interval Tree Visualizer */
+#treeChart {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.fc-h-event .fc-event-title-container {
+  position: fixed !important;
+  top: 10px; /* or wherever you want */
+  left: 10px;
+  width: 200px; /* fixed width */
+  background: white;
+  z-index: 9999;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  #calendar {
+    padding: 10px;
+  }
+  .dashboard-stat {
+    margin-bottom: 15px;
+  }
+}
+.modal.fade .modal-dialog {
+  transform: translateY(-50px);
+  transition: transform 0.3s ease-out;
+  opacity: 0;
+}
+
+.modal.fade.show .modal-dialog {
+  transform: translateY(0);
+  opacity: 1;
+}
+.fc-event {
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.fc-event:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  z-index: 9999;
+}
+
+/* Your existing styles... */
+
+/* Make calendar dates inherit font and color */
+#calendar,
+#calendar * {
+  font-family: inherit !important;
+  color: inherit !important;
+  font-size: inherit !important;
+}
+
+.fc-daygrid-day-number,
+.fc-daygrid-day-top,
+.fc-daygrid-day-bg,
+.fc-daygrid-day-events {
+  color: inherit !important;
+  font-family: inherit !important;
+}
+
+/* Remove underline from day headers and change text color to black */
+.fc-col-header-cell-cushion a {
+  text-decoration: none !important;
+  color: black !important;
+  font-weight: 600; /* optional: make it a bit bolder */
+}
+ChatGPT said:
